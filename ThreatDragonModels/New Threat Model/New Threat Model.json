@@ -21,7 +21,7 @@
         "cells": [
           {
             "position": {
-              "x": 290,
+              "x": 280,
               "y": -560
             },
             "size": {
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "dcfdef4f-f830-4c7c-aa5a-fa3a5dec9dc6",
             "zIndex": -1,
+            "id": "dcfdef4f-f830-4c7c-aa5a-fa3a5dec9dc6",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "FC1 Internet / Serveur Web",
@@ -63,8 +63,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "4d0dc33d-9fa4-4eb5-b866-d0ed4d4cecfd",
             "zIndex": -1,
+            "id": "4d0dc33d-9fa4-4eb5-b866-d0ed4d4cecfd",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "FC2 Serveur Web / Application",
@@ -77,8 +77,8 @@
           },
           {
             "position": {
-              "x": 941,
-              "y": -620
+              "x": 971,
+              "y": -655
             },
             "size": {
               "width": 50,
@@ -91,8 +91,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "ad8f7ec7-f527-4c96-a83a-0b9a96df1e11",
             "zIndex": -1,
+            "id": "ad8f7ec7-f527-4c96-a83a-0b9a96df1e11",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "FC3 Application / Base de données",
@@ -124,6 +124,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -207,7 +208,6 @@
               ]
             },
             "id": "b6a6c164-1fc1-4f08-b881-33127beaa133",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "C1 Client (navigateur)",
@@ -259,6 +259,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -342,7 +343,6 @@
               ]
             },
             "id": "aaa7e88d-64a4-4cc2-b6a2-d1ed89f18d42",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "C2 Serveur Web",
@@ -401,6 +401,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -484,7 +485,6 @@
               ]
             },
             "id": "d046e656-601d-4f5f-81d1-edc6d4d60b8c",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "C3 Serveur applicatif",
@@ -574,6 +574,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -657,7 +658,6 @@
               ]
             },
             "id": "4569535c-c639-4709-be61-283aeedc1e93",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "C4 Base de données",
@@ -723,6 +723,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -806,7 +807,6 @@
               ]
             },
             "id": "68592fc2-1563-4e84-a5aa-7c2a9506d21a",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "C5 Journaux d'audit",
