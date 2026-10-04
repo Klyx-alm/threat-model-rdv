@@ -105,20 +105,20 @@
           },
           {
             "position": {
-              "x": 50,
-              "y": -455
+              "x": 40,
+              "y": -465
             },
             "size": {
-              "width": 150,
-              "height": 60
+              "width": 190,
+              "height": 80
             },
             "attrs": {
               "text": {
                 "text": "C1 Client (navigateur)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -215,9 +215,34 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5e7ebe2e-2352-411b-8fbf-63cca1b8c399",
+                  "title": "M3 Vol de cookie de session",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Usurpation d'identité",
+                  "description": "Vol du cookie de session permettant d'usurper l'identité d'un utilisateur",
+                  "mitigation": "Cookies Secure, HttpOnly, SameSite ; expiration et rotation de session.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -462,7 +487,7 @@
           },
           {
             "position": {
-              "x": 830,
+              "x": 891,
               "y": -450
             },
             "size": {
@@ -712,53 +737,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F1 HTTPS ",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": true,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "F1 HTTPS "
-            ],
-            "id": "5af28de3-b30c-4f9e-8198-ec903e3115ca",
-            "source": {
-              "cell": "b6a6c164-1fc1-4f08-b881-33127beaa133",
-              "port": "e6a01dd5-29bb-4bc3-927a-f26d6c78e659"
-            },
-            "target": {
-              "cell": "aaa7e88d-64a4-4cc2-b6a2-d1ed89f18d42",
-              "port": "8f16411f-d852-48af-9346-f79e2f851d1e"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -779,13 +759,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "504ece96-4bc8-4d0c-87da-ff531bcc32dd",
+                  "title": "M1 Injection SQL",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Falsification",
+                  "description": "Injection SQL modifiant ou extrayant des données de la base.\n",
+                  "mitigation": "Requêtes préparées, validation des entrées.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "F3 Requêtes SQL"
@@ -798,52 +797,6 @@
             "target": {
               "cell": "4569535c-c639-4709-be61-283aeedc1e93",
               "port": "d27a7f05-cabf-400c-a41c-3a546b10b5de"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F2 Transmission des requêtes",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "F2 Transmission des requêtes"
-            ],
-            "id": "414b8237-c5a7-420b-9806-0a1ce6ff1f12",
-            "source": {
-              "cell": "aaa7e88d-64a4-4cc2-b6a2-d1ed89f18d42",
-              "port": "c5a8b84e-2463-4c55-af86-b874dd5d7c61"
-            },
-            "target": {
-              "cell": "d046e656-601d-4f5f-81d1-edc6d4d60b8c",
-              "port": "8f16411f-d852-48af-9346-f79e2f851d1e"
             }
           },
           {
@@ -891,6 +844,125 @@
               "cell": "68592fc2-1563-4e84-a5aa-7c2a9506d21a",
               "port": "d27a7f05-cabf-400c-a41c-3a546b10b5de"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F2 Transmission des requêtes",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "F2 Transmission des requêtes"
+            ],
+            "id": "414b8237-c5a7-420b-9806-0a1ce6ff1f12",
+            "source": {
+              "cell": "aaa7e88d-64a4-4cc2-b6a2-d1ed89f18d42",
+              "port": "c5a8b84e-2463-4c55-af86-b874dd5d7c61"
+            },
+            "target": {
+              "cell": "d046e656-601d-4f5f-81d1-edc6d4d60b8c",
+              "port": "8f16411f-d852-48af-9346-f79e2f851d1e"
+            },
+            "vertices": [
+              {
+                "x": 491,
+                "y": -450
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F1 HTTPS ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58f97fbe-c9e6-4790-9ea2-eda23bb4f8bc",
+                  "title": "M2 Interception des échanges (MITM)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Divulgation d'information",
+                  "description": "Interception ou modification des identifiants et données si la connexion n'est pas chiffrée.",
+                  "mitigation": "HTTPS/TLS partout, redirection HTTP vers HTTPS, HSTS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "F1 HTTPS "
+            ],
+            "id": "5af28de3-b30c-4f9e-8198-ec903e3115ca",
+            "source": {
+              "cell": "b6a6c164-1fc1-4f08-b881-33127beaa133",
+              "port": "e6a01dd5-29bb-4bc3-927a-f26d6c78e659"
+            },
+            "target": {
+              "cell": "aaa7e88d-64a4-4cc2-b6a2-d1ed89f18d42",
+              "port": "8f16411f-d852-48af-9346-f79e2f851d1e"
+            },
+            "vertices": []
           }
         ],
         "description": "Petite application client-serveur de prise de rendez-vous (client Web, serveur applicatif, base de données) à revoir avant sa mise en production."
@@ -898,6 +970,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Dr ZANNOU Boris",
-    "threatTop": 0
+    "threatTop": 4
   }
 }
