@@ -21,6 +21,90 @@
         "cells": [
           {
             "position": {
+              "x": 240,
+              "y": -560
+            },
+            "size": {
+              "width": 50,
+              "height": 270
+            },
+            "attrs": {
+              "label": {
+                "text": "FC1 Internet / Serveur Web"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "dcfdef4f-f830-4c7c-aa5a-fa3a5dec9dc6",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "FC1 Internet / Serveur Web",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
+              "x": 511,
+              "y": -655
+            },
+            "size": {
+              "width": 50,
+              "height": 310
+            },
+            "attrs": {
+              "label": {
+                "text": "FC2 Serveur Web / Application"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "4d0dc33d-9fa4-4eb5-b866-d0ed4d4cecfd",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "FC2 Serveur Web / Application",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
+              "x": 771,
+              "y": -625
+            },
+            "size": {
+              "width": 50,
+              "height": 290
+            },
+            "attrs": {
+              "label": {
+                "text": "FC3 Application / Base de données"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "ad8f7ec7-f527-4c96-a83a-0b9a96df1e11",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "FC3 Application / Base de données",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
               "x": 50,
               "y": -455
             },
