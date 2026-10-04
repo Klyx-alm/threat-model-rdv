@@ -550,12 +550,12 @@
           },
           {
             "position": {
-              "x": 1061,
-              "y": -450
+              "x": 1101,
+              "y": -465
             },
             "size": {
               "width": 170,
-              "height": 50
+              "height": 80
             },
             "attrs": {
               "text": {
@@ -692,12 +692,15 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            }
+            },
+            "children": [
+              "b9c72a69-da3b-49a3-bf33-16d298f6e01f"
+            ]
           },
           {
             "position": {
               "x": 676,
-              "y": -290
+              "y": -247.00000000000003
             },
             "size": {
               "width": 210,
@@ -851,13 +854,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
